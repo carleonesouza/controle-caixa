@@ -2,7 +2,7 @@
 # Node.js API com Typescript
 -----------
 
-API criada para o controle de vendas de produtos de pequenos négocios, com possibilidade de geração de relatórios e calcular a melhor as vendas entre vários produtos, essa API tem como objetivo servir a aplicação [web]().
+API criada para o controle de vendas de produtos de pequenos négocios, com possibilidade de geração de relatórios e calcular melhor as vendas entre vários produtos, essa API tem como objetivo servir a aplicação [web]().
 
 
 ## ControleCaixaApp
