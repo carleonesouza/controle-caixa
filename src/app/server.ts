@@ -29,9 +29,8 @@ export class SetupServer extends Server {
     this.setupExpress();
     //this.setupHeader();
     this.setupErrorHandlers();
-    this.setupControllers();    
+    this.setupControllers();
     this.setDocs();
-    
   }
 
   public getApp(): Application {
@@ -56,13 +55,11 @@ export class SetupServer extends Server {
     this.addControllers([productController]);
   }
 
-  
-  private setupHeader() : void {
-    this.app.use(apiHeaderHandle)
+  private setupHeader(): void {
+    this.app.use(apiHeaderHandle);
   }
 
-
-  private setDocs() : void {
+  private setDocs(): void {
     const customCss: string = fs.readFileSync(
       process.cwd() + '/src/docs/swagger.css',
       'utf8'
@@ -74,11 +71,9 @@ export class SetupServer extends Server {
     );
   }
 
-
   private setupErrorHandlers(): void {
     this.app.use(apiErrorHandle);
   }
-
 
   public start(): void {
     this.server = this.app.listen(this.port, () => {
